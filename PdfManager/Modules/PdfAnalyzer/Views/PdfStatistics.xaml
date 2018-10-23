@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="PdfManager.Modules.PdfAnalyzer.Views.PdfStatistics"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PdfManager.Modules.PdfAnalyzer.Views"
+             xmlns:vmlocator="clr-namespace:Prism.Mvvm;assembly=Prism.Wpf"
+             vmlocator:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="350" Height="350" MaxWidth="350" MaxHeight="350" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Style="{StaticResource OddRow}" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Text="Unique Words Count" Style="{StaticResource StatisticsLabel}"></TextBlock>
+
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Style="{StaticResource StatisticsLabel}" Text="{Binding PdfStatisticsNotification.Content.UniqueWordsCount}"></TextBlock>
+
+        <Border Style="{StaticResource EvenRow}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Text="Average Words Length" Style="{StaticResource StatisticsLabel}"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Style="{StaticResource StatisticsLabel}" Text="{Binding PdfStatisticsNotification.Content.AverageWordLength}"></TextBlock>
+
+        <Border Style="{StaticResource OddRow}" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Text="Sentences Count" Style="{StaticResource StatisticsLabel}"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Style="{StaticResource StatisticsLabel}"  Text="{Binding PdfStatisticsNotification.Content.SentencesCount}"></TextBlock>
+
+        <Border Style="{StaticResource EvenRow}" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Text="Average Sentence Length" Style="{StaticResource StatisticsLabel}"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                  Style="{StaticResource StatisticsLabel}" Text="{Binding PdfStatisticsNotification.Content.AverageSentenceLength}"></TextBlock>
+
+        <Border Style="{StaticResource OddRow}" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Text="Paragraphs Count" Style="{StaticResource StatisticsLabel}"></TextBlock>
+        <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal">
+            <Button Height="25" Margin="3,0,3,0" Background="LightCyan" Command="{Binding GetParagraphsCountCommand}">Load</Button>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Style="{StaticResource StatisticsLabel}"  Text="{Binding Paragraphs}"></TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,11 @@
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\bin\Debug\PdfManager.Core.dll
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\bin\Debug\PdfManager.Core.pdb
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\bin\Debug\IronPdf.dll
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\obj\Debug\PdfManager.Core.Properties.Resources.resources
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\obj\Debug\PdfManager.Core.csproj.GenerateResource.cache
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\obj\Debug\PdfManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\obj\Debug\PdfManager.Core.csproj.CopyComplete
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\obj\Debug\PdfManager.Core.dll
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\obj\Debug\PdfManager.Core.pdb
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\bin\Debug\SautinSoft.Document.dll
+C:\Users\islam.refaei\source\repos\PdfManager\PdfManager.Core\bin\Debug\SautinSoft.Document.xml
